@@ -1,6 +1,7 @@
 *{
   padding: 0;
   margin: 0;
+  font-family: 'Roboto-Regular', sans-serif;
 
 }
 a{
@@ -138,4 +139,92 @@ a:active h2{
 a:hover h2{
   color: #fff;
 
+}
+
+.more{
+  display: block !important;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background: transparent;
+  height: 45px;
+  width: 230px;
+  border: 2px solid #000;
+  -webkit-box-shadow: 0 0 50px 1px rgba(0,0,0, 0.4);
+  box-shadow: 0 0 50px 1px rgba(0,0,0, 0.4);
+  transition: all .2s ease;
+}
+.more:before{
+  content: 'ALL Work';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  color: #fff;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.more:hover:before{
+  width: 100%;
+  transition: all .6s ease;
+  opacity: 1;
+  color:
+
+}
+.more:hover{
+  transform: scale(0.97);
+  border: none;
+  color: #fff;
+}
+.more_back{
+  display: block !important;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background: transparent;
+  height: 45px;
+  width: 230px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  border: 2px solid #000;
+  -webkit-box-shadow: 0 0 50px 1px rgba(0,0,0, 0.4);
+  box-shadow: 0 0 50px 1px rgba(0,0,0, 0.4);
+  transition: all .2s ease;
+}
+.more_back::before{
+  content: 'Назад';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  color: #fff;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.more_back:hover::before{
+  width: 100%;
+  transition: all .6s ease;
+  opacity: 1;
+
+}
+.more_back:hover{
+  transform: scale(0.97);
+  border: none;
+  color: #fff;
 }

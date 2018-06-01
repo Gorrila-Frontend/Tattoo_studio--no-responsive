@@ -8,10 +8,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 
   </script>
+  <link href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css" rel="stylesheet">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/media.css">
 
 </head>
 <body>
@@ -20,10 +23,28 @@
   <header>
     <div class="background__container">
       <img src="img/Single slide.png" alt="" class="slide__background">
+      <div class="hamburger__menu">
+          <div class="container_line" id="click">
+            <span class="line--item"></span>
+            <span class="line--item"></span>
+            <span class="line--item"></span>
+          </div>
+      </div>
+      <div id="mobile_menu">
+        <div class="container__href">
+          <a href="">HOME</a>
+          <a href="">ABOUT</a>
+          <a href="">GALLERY</a>
+          <a href="">FAQ</a>
+          <a href="">FIND US</a>
+          <a href="">CONTACT</a>
+        </div>
+      </div>
       <div class="navbar__container">
-        <div class="logotip__container">
+        <div class="logotip__container ">
           <img class="mw-100" src="img/Logo.png" alt="">
         </div>
+
         <div class="left__menu__items">
           <div class="a__container"><a href="" class="item__nav">HOME</a> <div class="line__down"></div></div>
           <div class="a__container"><a href="" class="item__nav">ABOUT</a><div class="line__down"></div></div>
@@ -77,102 +98,116 @@
         </div>
       </div>
     </div>
-    <div class="container__row">
-      <div class="row__top">
-        <div class="container__row--img">
-          <img src="img/row1/1.jpg" alt="" class="mw100">
-          <div class="before__img">
-            <i class="fas fa-search fa-3x"></i>
-          </div>
-          <div class="three__items">
-            <i class="fas fa-link"></i>
-            <i class="fas fa-info-circle"></i>
-            <i class="fas fa-heart"></i>
-          </div>
-        </div>
-        <div class="container__row--img">
-          <img src="img/row1/6.jpg" alt="" class="mw100">
-          <div class="before__img">
-            <i class="fas fa-search fa-3x"></i>
-          </div>
-          <div class="three__items">
-            <i class="fas fa-link"></i>
-            <i class="fas fa-info-circle"></i>
-            <i class="fas fa-heart"></i>
-          </div>
-        </div>
-        <div class="container__row--img">
-          <img src="img/row1/3.jpg" alt="" class="mw100">
-          <div class="before__img">
-            <i class="fas fa-search fa-3x"></i>
-          </div>
-          <div class="three__items">
-            <i class="fas fa-link"></i>
-            <i class="fas fa-info-circle"></i>
-            <i class="fas fa-heart"></i>
-          </div>
-        </div>
-        <div class="container__row--img">
-          <img src="img/row1/4.jpg" alt="" class="mw100">
-          <div class="before__img">
-            <i class="fas fa-search fa-3x"></i>
-          </div>
-          <div class="three__items">
-            <i class="fas fa-link"></i>
-            <i class="fas fa-info-circle"></i>
-            <i class="fas fa-heart"></i>
-          </div>
-        </div>
-      </div>
-      <div class="row__down">
-          <div class="container__row--img">
-            <img src="img/row1/1.jpg" alt="" class="mw100">
-            <div class="before__img">
-              <i class="fas fa-search fa-3x"></i>
-            </div>
-            <div class="three__items">
-              <i class="fas fa-link"></i>
-              <i class="fas fa-info-circle"></i>
-              <i class="fas fa-heart"></i>
-            </div>
-          </div>
-          <div class="container__row--img">
-            <img src="img/row1/6.jpg" alt="" class="mw100">
-            <div class="before__img">
-              <i class="fas fa-search fa-3x"></i>
-            </div>
-            <div class="three__items">
-              <i class="fas fa-link"></i>
-              <i class="fas fa-info-circle"></i>
-              <i class="fas fa-heart"></i>
-            </div>
-          </div>
-          <div class="container__row--img">
-            <img src="img/row1/3.jpg" alt="" class="mw100">
-            <div class="before__img">
-              <i class="fas fa-search fa-3x"></i>
-            </div>
-            <div class="three__items">
-              <i class="fas fa-link"></i>
-              <i class="fas fa-info-circle"></i>
-              <i class="fas fa-heart"></i>
-            </div>
-          </div>
-          <div class="container__row--img">
-            <img src="img/row1/4.jpg" alt="" class="mw100">
-            <div class="before__img">
-              <i class="fas fa-search fa-3x"></i>
-            </div>
-            <div class="three__items">
-              <i class="fas fa-link"></i>
-              <i class="fas fa-info-circle"></i>
-              <i class="fas fa-heart"></i>
-            </div>
-          </div>
+    <div class="demo-gallery about_gallery">
+        <ul id="lightgallery4" class="list-unstyled row">
+            <li class="-mt_ab col-xs-6 col-sm-6 col-md-6 col-lg-3 col-lg-3"  data-src="img/row1/4.jpg" >
+                <a href="">
+                  <img src="img/row1/4.jpg" class="mw-100 " alt="">
+                  <div class="before__img">
+                    <i class="fas fa-search fa-3x"></i>
+                  </div>
+                  <div class="three__items">
+                    <i class="fas fa-link"></i>
+                    <i class="fas fa-info-circle"></i>
+                    <i class="fas fa-heart"></i>
+                  </div>
+                </a>
+            </li>
+            <li class="-mt_ab col-xs-6 col-sm-6 col-md-6 col-lg-3 col-lg-3"  data-src="img/row1/5.jpg" >
+                <a href="">
+                  <img src="img/row1/5.jpg" class="mw-100 " alt="">
+                  <div class="before__img">
+                    <i class="fas fa-search fa-3x"></i>
+                  </div>
+                  <div class="three__items">
+                    <i class="fas fa-link"></i>
+                    <i class="fas fa-info-circle"></i>
+                    <i class="fas fa-heart"></i>
+                  </div>
+                </a>
+            </li>
+            <li class="-mt_ab col-xs-6 col-sm-6 col-md-6 col-lg-3 col-lg-3"  data-src="img/row1/1.jpg" >
+                <a href="">
+                  <img src="img/row1/1.jpg" class="mw-100 " alt="">
+                  <div class="before__img">
+                    <i class="fas fa-search fa-3x"></i>
+                  </div>
+                  <div class="three__items">
+                    <i class="fas fa-link"></i>
+                    <i class="fas fa-info-circle"></i>
+                    <i class="fas fa-heart"></i>
+                  </div>
+                </a>
+            </li>
+            <li class="-mt_ab col-xs-6 col-sm-6 col-md-6 col-lg-3 col-lg-3"  data-src="img/row1/6.jpg" >
+                <a href="">
+                  <img src="img/row1/6.jpg" class="mw-100 " alt="">
+                  <div class="before__img">
+                    <i class="fas fa-search fa-3x"></i>
+                  </div>
+                  <div class="three__items">
+                    <i class="fas fa-link"></i>
+                    <i class="fas fa-info-circle"></i>
+                    <i class="fas fa-heart"></i>
+                  </div>
+                </a>
+            </li>
+        </ul>
+        <ul id="lightgallery5" class="list-unstyled row">
+          <li class="-mt_ab col-xs-6 col-sm-6 col-md-6 col-lg-3 col-lg-3"  data-src="img/row1/3.jpg" >
+              <a href="">
+                <img src="img/row1/3.jpg" class="mw-100 " alt="">
+                <div class="before__img">
+                  <i class="fas fa-search fa-3x"></i>
+                </div>
+                <div class="three__items">
+                  <i class="fas fa-link"></i>
+                  <i class="fas fa-info-circle"></i>
+                  <i class="fas fa-heart"></i>
+                </div>
+              </a>
+          </li>
+          <li class="-mt_ab col-xs-6 col-sm-6 col-md-6 col-lg-3 col-lg-3"  data-src="img/row1/4.jpg" >
+              <a href="">
+                <img src="img/row1/4.jpg" class="mw-100 " alt="">
+                <div class="before__img">
+                  <i class="fas fa-search fa-3x"></i>
+                </div>
+                <div class="three__items">
+                  <i class="fas fa-link"></i>
+                  <i class="fas fa-info-circle"></i>
+                  <i class="fas fa-heart"></i>
+                </div>
+              </a>
+          </li>
+          <li class="-mt_ab col-xs-6 col-sm-6 col-md-6 col-lg-3 col-lg-3"  data-src="img/row1/6.jpg" >
+              <a href="">
+                <img src="img/row1/6.jpg" class="mw-100 " alt="">
+                <div class="before__img">
+                  <i class="fas fa-search fa-3x"></i>
+                </div>
+                <div class="three__items">
+                  <i class="fas fa-link"></i>
+                  <i class="fas fa-info-circle"></i>
+                  <i class="fas fa-heart"></i>
+                </div>
+              </a>
+          </li>
+          <li class="-mt_ab col-xs-6 col-sm-6 col-md-6 col-lg-3 col-lg-3"  data-src="img/row1/1.jpg" >
+              <a href="">
+                <img src="img/row1/1.jpg" class="mw-100 " alt="">
+                <div class="before__img">
+                  <i class="fas fa-search fa-3x"></i>
+                </div>
+                <div class="three__items">
+                  <i class="fas fa-link"></i>
+                  <i class="fas fa-info-circle"></i>
+                  <i class="fas fa-heart"></i>
+                </div>
+              </a>
+          </li>
+        </ul>
 
-
-      </div>
-    </div>
   </main>
   <main>
     <div class="ourview__container" >
@@ -192,10 +227,7 @@
             <p class="twits__text">RT @collis: Trade growth ideas with other founders. Look for ways to cross promote. Small startups today may be big friends later. (9/10)  2 days ago</p>
           </div>
         </div>
-      </div>
-      <div class="text__content">
 
-      </div>
     </div>
   </main>
   <main>
@@ -308,7 +340,7 @@
 
   </main>
 
-  <main>
+  <main class="gallery">
     <div class="container__gallery">
       <div class="row__top">
         <div class="block__gallary__anim">
@@ -322,125 +354,149 @@
 
     </div>
     <div class="container__gallery">
-      <div class="row2">
-        <div class="gallery__img__container">
-          <img src="img/gallery/row1/1.jpg" class="mw-100" alt="">
+      <div class="demo-gallery">
+          <ul id="lightgallery" class="list-unstyled row">
+              <li class="-mt col-xs-6 col-sm-6 col-md-6 col-lg-3 col-lg-3"  data-src="img/gallery/row1/4.jpg" >
+                  <a href="">
+                    <img src="img/gallery/row1/4.jpg" class="mw-100" alt="">
 
+                  </a>
+              </li>
+              <li class="-mt col-xs-6 col-sm-6 col-md-6 col-lg-3 col-lg-3"  data-src="img/gallery/row1/5.jpg" >
+                  <a href="">
+                    <img src="img/gallery/row1/5.jpg" class="mw-100" alt="">
 
-          <a href="#"><i class="fas fa-arrows-alt fa-3x"></i></a>
+                  </a>
+              </li>
+              <li class="-mt col-xs-6 col-sm-6 col-md-6 col-lg-3 col-lg-3"  data-src="img/gallery/row1/1.jpg" >
+                  <a href="">
+                    <img src="img/gallery/row1/1.jpg" class="mw-100" alt="">
 
+                  </a>
+              </li>
+              <li class="-mt col-xs-6 col-sm-6 col-md-6 col-lg-3 col-lg-3"  data-src="img/gallery/row1/4.jpg" >
+                  <a href="">
+                    <img src="img/gallery/row1/4.jpg" class="mw-100" alt="">
 
-        </div>
-        <div class="gallery__img__container">
-          <img src="img/gallery/row1/3.jpg" class="mw-100" alt="">
-          <a href="#"><i class="fas fa-arrows-alt fa-3x"></i></a>
+                  </a>
+              </li>
+          </ul>
+          <ul id="lightgallery2" class="list-unstyled row">
+              <li class="-mt col-xs-6 col-sm-6 col-md-6 col-lg-3 col-lg-3"  data-src="img/gallery/row1/4.jpg" >
+                  <a href="">
+                    <img src="img/gallery/row1/4.jpg" class="mw-100" alt="">
 
-        </div>
-        <div class="gallery__img__container">
-          <img src="img/gallery/row1/4.jpg" class="mw-100" alt="">
-          <a href="#"><i class="fas fa-arrows-alt fa-3x"></i></a>
+                  </a>
+              </li>
+              <li class="-mt col-xs-6 col-sm-6 col-md-6 col-lg-3 col-lg-3"  data-src="img/gallery/row1/5.jpg" >
+                  <a href="">
+                    <img src="img/gallery/row1/5.jpg" class="mw-100" alt="">
 
-        </div>
-        <div class="gallery__img__container">
-          <img src="img/gallery/row1/5.jpg" class="mw-100" alt="">
-          <a href="#"><i class="fas fa-arrows-alt fa-3x"></i></a>
+                  </a>
+              </li>
+              <li class="-mt col-xs-6 col-sm-6 col-md-6 col-lg-3 col-lg-3"  data-src="img/gallery/row1/1.jpg" >
+                  <a href="">
+                    <img src="img/gallery/row1/1.jpg" class="mw-100" alt="">
 
-        </div>
-        <div class="gallery__img__container">
-          <img src="img/gallery/row1/6.jpg" class="mw-100" alt="">
-          <a href="#"><i class="fas fa-arrows-alt fa-3x"></i></a>
+                  </a>
+              </li>
+              <li class="-mt col-xs-6 col-sm-6 col-md-6 col-lg-3 col-lg-3"  data-src="img/gallery/row1/4.jpg" >
+                  <a href="">
+                    <img src="img/gallery/row1/4.jpg" class="mw-100" alt="">
 
-        </div>
-      </div>
-    </div>
-    <div class="container__gallery">
-      <div class="row2">
-        <div class="gallery__img__container">
-          <img src="img/gallery/row2/1.png" class="mw-100" alt="">
-          <a href="#"><i class="fas fa-arrows-alt fa-3x"></i></a>
+                  </a>
+              </li>
+          </ul>
+          <ul id="lightgallery3" class="list-unstyled row">
+              <li class="-mt col-xs-6 col-sm-6 col-md-6 col-lg-3 col-lg-3"  data-src="img/gallery/row1/4.jpg" >
+                  <a href="">
+                    <img src="img/gallery/row1/4.jpg" class="mw-100" alt="">
 
+                  </a>
+              </li>
+              <li class="-mt col col-xs-6 col-sm-6 col-md-6 col-lg-3 col-lg-3"  data-src="img/gallery/row1/5.jpg" >
+                  <a href="">
+                    <img src="img/gallery/row1/5.jpg" class="mw-100" alt="">
 
-        </div>
-        <div class="gallery__img__container">
-          <img src="img/gallery/row2/2.png" class="mw-100" alt="">
-          <a href="#"><i class="fas fa-arrows-alt fa-3x"></i></a>
+                  </a>
+              </li>
+              <li class="-mt col col-xs-6 col-sm-6 col-md-6 col-lg-3 col-lg-3"  data-src="img/gallery/row1/1.jpg" >
+                  <a href="">
+                    <img src="img/gallery/row1/1.jpg" class="mw-100" alt="">
 
-        </div>
-        <div class="gallery__img__container">
-          <img src="img/gallery/row2/3.png" class="mw-100" alt="">
-          <a href="#"><i class="fas fa-arrows-alt fa-3x"></i></a>
+                  </a>
+              </li>
+              <li class="-mt col-xs-6 col-sm-6 col-md-6 col-lg-3 col-lg-3"  data-src="img/gallery/row1/4.jpg" >
+                  <a href="">
+                    <img src="img/gallery/row1/4.jpg" class="mw-100" alt="">
 
-        </div>
-        <div class="gallery__img__container">
-          <img src="img/gallery/row2/4.png" class="mw-100" alt="">
-          <a href="#"><i class="fas fa-arrows-alt fa-3x"></i></a>
-
-        </div>
-        <div class="gallery__img__container">
-          <img src="img/gallery/row2/5.png" class="mw-100" alt="">
-          <a href="#"><i class="fas fa-arrows-alt fa-3x"></i></a>
-
-        </div>
-      </div>
-      <div class="row2">
-        <div class="gallery__img__container">
-          <img src="img/gallery/row2/6.png" class="mw-100" alt="">
-          <a href="#"><i class="fas fa-arrows-alt fa-3x"></i></a>
-
-        </div>
-        <div class="gallery__img__container">
-          <img src="img/gallery/row2/7.png" class="mw-100" alt="">
-          <a href="#"><i class="fas fa-arrows-alt fa-3x"></i></a>
-
-        </div>
-        <div class="gallery__img__container">
-          <img src="img/gallery/row2/8.png" class="mw-100" alt="">
-          <a href="#"><i class="fas fa-arrows-alt fa-3x"></i></a>
-
-        </div>
-        <div class="gallery__img__container">
-          <img src="img/gallery/row2/11.png" class="mw-100" alt="">
-          <a href="#"><i class="fas fa-arrows-alt fa-3x"></i></a>
-
-        </div>
-        <div class="gallery__img__container">
-          <img src="img/gallery/row2/10.png" class="mw-100" alt="">
-          <a href="#"><i class="fas fa-arrows-alt fa-3x"></i></a>
-
-        </div>
-      </div>
-    </div>
-    <div class="container__gallery">
-      <div class="row2">
-        <div class="gallery__img__container">
-          <img src="img/gallery/row3/1.jpg" class="mw-100" alt="">
-          <a href="#"><i class="fas fa-arrows-alt fa-3x"></i></a>
-
-        </div>
-        <div class="gallery__img__container">
-          <img src="img/gallery/row3/2.jpg" class="mw-100" alt="">
-          <a href="#"><i class="fas fa-arrows-alt fa-3x"></i></a>
-
-        </div>
-        <div class="gallery__img__container">
-          <img src="img/gallery/row3/4.jpg" class="mw-100" alt="">
-          <a href="#"><i class="fas fa-arrows-alt fa-3x"></i></a>
-
-        </div>
-        <div class="gallery__img__container">
-          <img src="img/gallery/row3/5.jpg" class="mw-100" alt="">
-          <a href="#"><i class="fas fa-arrows-alt fa-3x"></i></a>
-
-        </div>
-        <div class="gallery__img__container">
-          <img src="img/gallery/row3/6.jpg" class="mw-100" alt="">
-          <a href="#"><i class="fas fa-arrows-alt fa-3x"></i></a>
-
-        </div>
+                  </a>
+              </li>
+          </ul>
       </div>
 
     </div>
+    <div class="row__top mobile_top">
+      <div class="block__gallary__anim">
+          <div class="about gallery__about">
+            <a href="#123"><h2>GALLERY</h2></a>
+          </div>
+      </div>
+    <div class="gallery__mobile__container">
+
+      <div class="gallery__img__container">
+        <img src="img/gallery/row3/4.jpg" class="mw-100" alt="">
+      </div>
+      <div class="gallery__img__container ">
+        <img src="img/gallery/row3/4.jpg" class="mw-100" alt="">
+      </div>
+      <div class="gallery__img__container ">
+        <img src="img/gallery/row3/4.jpg" class="mw-100" alt="">
+      </div>
+      <div class="gallery__img__container ">
+        <img src="img/gallery/row3/4.jpg" class="mw-100" alt="">
+      </div>
+
+    </div>
+
+    <div class="gallery__mobile__container">
+      <div class="gallery__img__container">
+        <img src="img/gallery/row3/5.jpg" class="mw-100" alt="">
+      </div>
+      <div class="gallery__img__container">
+        <img src="img/gallery/row3/5.jpg" class="mw-100" alt="">
+      </div>
+      <div class="gallery__img__container">
+        <img src="img/gallery/row3/5.jpg" class="mw-100" alt="">
+      </div>
+      <div class="gallery__img__container">
+        <img src="img/gallery/row3/5.jpg" class="mw-100" alt="">
+      </div>
+
+    </div>
+    <div class="gallery__mobile__container">
+      <div class="gallery__img__container">
+        <img src="img/gallery/row3/1.jpg" class="mw-100" alt="">
+      </div>
+      <div class="gallery__img__container ">
+        <img src="img/gallery/row3/1.jpg" class="mw-100" alt="">
+      </div>
+      <div class="gallery__img__container">
+        <img src="img/gallery/row3/1.jpg" class="mw-100" alt="">
+      </div>
+      <div class="gallery__img__container ">
+        <img src="img/gallery/row3/1.jpg" class="mw-100" alt="">
+      </div>
+
+    </div>
+  </div>
+    <a href="./allgallery.html">
+      <button class="more">
+        Learn more
+      </button>
+    </a>
   </main>
+
   <main>
     <div class="contact_us">
       <div class="left__container">
@@ -451,14 +507,14 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente reprehenderit, Sapiente reprehenderit,
         </p>
         <div class="content__info">
-          <p class="title_info">
+          <p class="title_info col col-10 col-sm-8">
           <strong>INFO</strong> <br><br>
           Phone:&nbsp  <strong>+7(000)-000-00-00</strong><br>
           FAX:&nbsp  <strong>+7(000)-000-00-00</strong><br>
           E-MAIL:&nbsp  <strong>info@inktatoo.com</strong><br>
           Adress:&nbsp <strong>12, street road City name</strong>
         </p>
-        <p class="title_info">
+        <p class="title_info col col-10 col-sm-8">
         <strong>Work Hours</strong> <br><br>
         Monday-friday&nbsp<strong>09:00 - 18:00</strong><br>
         Saturday&nbsp  <strong>09:00 - 13:00</strong><br>
@@ -506,10 +562,12 @@
   </footer>
 
   <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
 <script type="text/javascript" src="js/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 
 
 <script type="text/javascript">
@@ -526,7 +584,36 @@
 });
 
 </script>
+<script type="text/javascript">
+  $('.gallery__mobile__container').slick({
+  dots: true,
+  infinite: true,
+  speed: 2000,
+  arrows: true,
+  autoplay:true,
+  autoplaySpeed: 3000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  adaptiveHeight: true
+});
 
+</script>
+
+<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+<script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
+<script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
+<script src="https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js"></script>
+<script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
+<script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
+<script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
+<script src="https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js"></script>
+<script>
+lightGallery(document.getElementById('lightgallery'));
+lightGallery(document.getElementById('lightgallery2'));
+lightGallery(document.getElementById('lightgallery3'));
+lightGallery(document.getElementById('lightgallery4'));
+    lightGallery(document.getElementById('lightgallery5'));
+</script>
 
 </body>
 </html>

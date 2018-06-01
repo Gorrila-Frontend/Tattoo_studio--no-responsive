@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node-sass sass/index.scss css/index.css -w serve",
-  "start": "serve"
+    "start": "node-sass sass/index.scss css/index.css -w"
   },
   "repository": {
     "type": "git",
